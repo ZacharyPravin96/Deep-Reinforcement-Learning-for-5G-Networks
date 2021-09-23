@@ -425,7 +425,7 @@ def plot_actions(actions, max_timesteps_per_episode, episode_index, max_episodes
 ########################################################################################
 
 radio_frame = 10
-#seeds = np.arange(50).astype(int).tolist() 
+seeds = np.arange(50).astype(int).tolist() 
 
 seeds = [0] # for the optimal case.
 start_time = time.time()
@@ -437,7 +437,7 @@ for seed in seeds:
  
     env = radio_environment(seed=seed)
 
-    run_agent_optimal(env)
+    #run_agent_optimal(env)
 
     #agent = QLearner(seed=seed) # only for the deep
     #run_agent_deep(env)
